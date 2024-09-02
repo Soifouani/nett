@@ -1,0 +1,66 @@
+.event_month {
+    font-family: 'open-sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-container aside {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 5px;
+    border-top: 1px solid black;
+    margin: 10px 0;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+}
+
+aside .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'open-sans', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-info span {
+    margin: 5px 0;
+}
+
+.event-info-title {
+    font-family: 'open-sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.event-info-sub-title {
+    font-family: 'open-sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.canceled-img_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

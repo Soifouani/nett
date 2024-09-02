@@ -1,0 +1,46 @@
+nav {
+    width: 350px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 20%;
+    padding: 15px;
+}
+
+.nav-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    font-family: open-sans, sans-serif;
+    margin: 16px 8px;
+}
+
+.menu-item {
+    margin: 10px 0 10px 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-family: 'open-sans', sans-serif;
+}
+
+.sub-menu {
+    margin: 5px 0 5px 32px;
+}
+
+.sub-menu li {
+    margin: 5px 0 5px 32px;
+}
+
+.sub-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-family: 'open-sans', sans-serif;
+}
+
+.selected {
+    color: #000000;
+    font-weight: bold;
+}

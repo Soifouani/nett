@@ -1,0 +1,18 @@
+.description h1 {
+    font-family: 'open-sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.description p {
+    font-family: 'open-sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.description p:last-child {
+    margin-bottom: 0;
+}
