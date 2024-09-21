@@ -1,25 +1,28 @@
 import { ReactElement, useState } from "react";
-import MenuItem from "./MenuItem";
 import "./menu.css";
-import {menuItems} from "../../data/Data.ts";
+import { menus } from "../../data/Data.ts";
+import { Link } from "react-router-dom";
 
 const Menu = (): ReactElement => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const handleClick = (index: number) => setOpenIndex(openIndex === index ? null : index);
 
     return (
-        <nav>
-            <div className={"nav-title"}>Nos Projets</div>
+        <nav className={"menu"}>
+            <div className={"menu-title"}>Nos Projets</div>
             <ul>
-                {menuItems.map((menuItem, index) => (
-                    <MenuItem
-                        key={index}
-                        title={menuItem.title}
-                        subItems={menuItem.subItems}
-                        isOpen={openIndex === index}
-                        onClick={() => handleClick(index)}
-                    />
-                ))}
+                {menus.map((menu, index) => {
+                    return (
+                        <li key={index}>
+                            <Link to={menu.link} onClick={() => handleClick(index)} className={`menu-item ${ openIndex === index ? 'selected' : ''}`}>
+                                <span>
+                                    <img src={menu.icon} alt={menu.title}/>
+                                </span>
+                                <span>{menu.title}</span>
+                            </Link>
+                        </li>
+                    );
+                })}
             </ul>
         </nav>
     );

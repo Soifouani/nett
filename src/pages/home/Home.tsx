@@ -1,9 +1,10 @@
+import { ReactElement } from "react";
 import Description from "../../components/description/Description.tsx";
 import EventList from "../../components/event/EventList.tsx";
 
 import "./home.css";
 
-const Home = () => {
+const Home = (): ReactElement => {
     return (
         <>
             <Description />

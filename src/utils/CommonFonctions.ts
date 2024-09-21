@@ -1,27 +1,25 @@
-import {DIY_WORKSHOPS, FREE_TRADE, FRESKS, NATURE_WALKS, CLEAN_UP, GREENING, DIALOGUE} from "./Constants.ts";
-import trashCollectionIcon from "../assets/icons/Icon-clean-up.svg";
-import discussionIcon from "../assets/icons/icon-discussion.svg";
-import diyWorkshopsIcon from "../assets/icons/icon-diy.svg";
-import muralsIcon from "../assets/icons/icon-fresque.svg";
-import freeZonesIcon from "../assets/icons/icon-trade.svg";
-import vegetalizeIcon from "../assets/icons/icon-vegetalize.svg";
+import all_project from "../assets/icons/13px/Icon - All Projects_130px.svg";
+import diy_workshops from "../assets/icons/13px/Icon_DiY_130px.svg";
+import nature_and_greening from "../assets/icons/13px/Icon_Nature_Greening_130px.svg";
+import free_trade from "../assets/icons/13px/Icon_FreeTrade_130px.svg";
+import events from "../assets/icons/13px/Icon_Event_Blue_130px.svg";
+import association from "../assets/icons/13px/Icon_Association_130px.svg";
+import {ALL_PROJECTS, ASSOCIATION, DIY_WORKSHOPS, EVENTS, FREE_TRADE, NATURE_AND_GREENING } from "./Constants";
 
 export const getEventIcon =(event: string) => {
     switch (event) {
         case DIY_WORKSHOPS:
-            return diyWorkshopsIcon;
-        case GREENING:
-            return vegetalizeIcon;
+            return diy_workshops;
+        case NATURE_AND_GREENING:
+            return nature_and_greening;
         case FREE_TRADE:
-            return freeZonesIcon;
-        case NATURE_WALKS:
-            return null;
-        case FRESKS:
-            return muralsIcon;
-        case CLEAN_UP:
-            return trashCollectionIcon;
-        case DIALOGUE:
-            return discussionIcon;
+            return free_trade;
+        case ALL_PROJECTS:
+            return all_project;
+        case EVENTS:
+            return events;
+        case ASSOCIATION:
+            return association;
         default:
             return null;
     }
