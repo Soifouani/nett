@@ -1,5 +1,6 @@
 export interface Event {
-    date: string;
+    dayNumber: string;
+    day: string;
     title: string;
     subTitle: string;
     venue: string;

@@ -7,14 +7,12 @@ import {EventCalendar} from "../../models/EventCalendar.ts";
 import "./event.css";
 
 const EventList = (): ReactElement => {
-
-    const fullYear = new Date().getFullYear();
-
+    
     return (
-        <section id="event">
+        <section className={"event"}>
             {eventCalendar.map((eventCalendar: EventCalendar, i: number) => (
                 <div key={`event_calendar_${i}`}>
-                    <span className={"event_month"}>{`${eventCalendar.month} ${fullYear}`}</span>
+                    <span className={"event-month"}>{eventCalendar.month}</span>
                     {
                         eventCalendar.events.map((event: Event, index: number) => (
                             <section key={`event_item_${index}`} className="event-container">

@@ -1,8 +1,8 @@
-export const environments: any = {
+export const environments = {
     app: {
         routes: {
             home: '/',
-            eventDetail: '/event/'
+            eventDetail: '/event/',
         }
     },
     api: {
