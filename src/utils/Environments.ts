@@ -7,7 +7,7 @@ export const environments = {
     },
     api: {
         route: {
-
+            // ici on aura les url vesrs le back-end dans le cadre d'un appelle api
         }
     }
 }

@@ -6,7 +6,7 @@ import events from "../assets/icons/13px/Icon_Event_Blue_130px.svg";
 import association from "../assets/icons/13px/Icon_Association_130px.svg";
 import {ALL_PROJECTS, ASSOCIATION, DIY_WORKSHOPS, EVENTS, FREE_TRADE, NATURE_AND_GREENING } from "./Constants";
 
-export const getEventIcon =(event: string) => {
+export const getEventIcon =(event: string) : string | null => {
     switch (event) {
         case DIY_WORKSHOPS:
             return diy_workshops;
