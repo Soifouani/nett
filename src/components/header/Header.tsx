@@ -16,17 +16,17 @@ const Header: FC = (): ReactElement => {
                     <img src={logo} alt="log"/>
                 </Link>
             </div>
-            <div className={"join-us"}>
-                <Link className={"join-us_link"} to={"#"}>
-                    <span className={"join-us_text"}>Adhésion avec </span>
-                    <span className={"join-us_img-wrapper"}>
-                        <img className={"join-us_img"} src={logoHelloAsso} alt=""/>
-                    </span>
-                </Link>
-            </div>
             <div className="wrapper-info">
-                <Link to="#"><img src={facebook} alt="facebook"/> </Link>
-                <Link to="#">Qui nous sommes ?</Link>
+                <div className="join-us">
+                    <Link className="join-us_link" to="#">
+                        <span className="join-us_img-wrapper">
+                            <img className="join-us_img" src={logoHelloAsso} alt=""/>
+                        </span>
+                        <span className="tooltip">Adhésion avec</span>
+                    </Link>
+                </div>
+                <Link className={"facebook"} to="#"><img src={facebook} alt="facebook"/> </Link>
+                <Link className={"about-us"} to="#">Qui nous sommes ?</Link>
             </div>
         </header>
     );

@@ -1,22 +1,18 @@
 .scroll-top-btn {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 15px;
+    padding: 10px;
     font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0;
-    transform: translateY(100px);
-    pointer-events: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    scale: 1.01;
+    background-color: #F6F6F6;
+    border-radius: 50px;
 }
 
-.scroll-top-btn .show {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+.scroll-top-btn.show {
+    display: inline-block;
 }

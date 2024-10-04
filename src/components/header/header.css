@@ -3,7 +3,7 @@ header {
     position: fixed;
     top: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,6 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    font-family: 'open-sans', sans-serif;
     font-size: 14px;
     gap: 50px;
 }
@@ -37,7 +36,6 @@ header {
 
 .join-us .join-us_text {
     font-size: 26px;
-    font-family: 'open-sans', sans-serif;
 }
 
 .join-us_img-wrapper {
@@ -46,11 +44,44 @@ header {
     justify-content: center;
     border-radius: 50px;
     border: 1px solid black;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     padding: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .join-us .join-us_img {
     width: 100px;
     height: 30px;
+}
+
+.join-us {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-bottom: 5px;
+    z-index: 10;
+}
+
+.join-us_link:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper-info .about-us {
+    font-size: 1.5rem;
 }
