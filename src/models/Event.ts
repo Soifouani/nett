@@ -8,7 +8,6 @@ export interface Event {
     email: string;
     picture: string;
     pictureDescription: string;
-    icon: string;
     time: string;
     link: string;
     canceled: boolean;

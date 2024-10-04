@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {ReactElement} from "react";
+import {FC, ReactElement} from "react";
 
 import logo from "../../assets/images/logo/logo-Nord-Est-Toulousain-en-transition.webp";
 import logoHelloAsso from "../../assets/images/logo/logo-helloAsso.png";
@@ -8,7 +8,7 @@ import facebook from "../../assets/icons/facebook.png";
 import "./header.css";
 import {environments} from "../../utils/Environments.ts";
 
-const Header = (): ReactElement => {
+const Header: FC = (): ReactElement => {
     return (
         <header>
             <div className="logo">
