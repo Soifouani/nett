@@ -1,6 +1,6 @@
-import {ReactElement} from "react";
+import {FC, ReactElement} from "react";
 import AppRoute from "./routes/AppRoute.tsx";
 
-const App = (): ReactElement => <AppRoute />
+const App: FC = (): ReactElement => <AppRoute />;
 
-export default App
+export default App;
