@@ -1,8 +1,8 @@
-import {ReactElement} from "react";
+import {FC, ReactElement} from "react";
 
 import "./description.css";
 
-const Description = (): ReactElement => {
+const Description: FC = (): ReactElement => {
     return (
         <section className="description">
             <h1>Adieu-siatz ! Bonjour à vous !</h1>

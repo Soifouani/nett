@@ -8,5 +8,6 @@ const App = (): ReactElement =>
         <ScrollTopButton />
     </>
 
+const App: FC = (): ReactElement => <AppRoute />;
 
 export default App

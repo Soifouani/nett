@@ -3,26 +3,10 @@
     height: 100vh;
     overflow-y: auto;
     position: fixed;
-    top: 20%;
     padding: 15px;
 }
 
-.menu-title {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 65px;
-    margin: 16px 8px;
-    color: white;
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
-}
-
 .menu-item {
-    margin: 10px 0 10px 32px;
-    padding: 8px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -36,6 +20,6 @@
 
 .selected {
     color: #000000;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
