@@ -1,12 +1,7 @@
-.description {
-    padding: 20px;
-    border-radius: 8px;
-}
-
 .home-container {
     display: flex;
 }
 
 .home-content {
-    margin: 0 0 150px 350px;
+    margin: 0 150px 0 500px;
 }

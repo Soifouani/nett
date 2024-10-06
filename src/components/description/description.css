@@ -3,20 +3,34 @@
 }
 
 .description h1 {
-    font-family: 'open-sans', sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 600;
-    margin: 20px 0;
+    margin: 10px 0;
     font-style: italic;
+    line-height: 1.36;
+    letter-spacing: -0.04em;
 }
 
 .description p {
-    font-family: 'open-sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    margin-bottom: 20px;
+    line-height: 1.36;
+    letter-spacing: -0.04em;
 }
 
 .description p:last-child {
     margin-bottom: 0;
+}
+
+.cheerful-happy-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translate(0, -30px);
+}
+
+.cheerful-happy-icon img {
+    Width: 55px;
+    Height: 55px;
 }

@@ -21,7 +21,7 @@ const Menu: FC<MenuProps> = ({ onMenuSelect }): ReactElement => {
                 {menus.map((menu, index) => {
                     return (
                         <li key={index}>
-                            <Link to={menu.link} onClick={() => handleClick(index, menu.title)} className={`menu-item ${ openIndex === index ? 'selected' : ''}`}>
+                            <Link to={menu.link} onClick={() => handleClick(index, menu.title)} className={`menu-item ${ openIndex === index ? 'selected' : 'no-selected'}`}>
                                 <span>
                                     <img src={menu.icon} alt={menu.title}/>
                                 </span>

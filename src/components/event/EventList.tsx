@@ -24,7 +24,7 @@ const EventList: FC<EventListProps> = ({ selectedMenu }): ReactElement => {
     return (
         <section className={"event"}>
             {filteredEvents.map((eventCalendar: EventCalendar, i: number) => (
-                <div key={`event_calendar_${i}`}>
+                <div key={`event_calendar_${i}`} className={"event-calendar"}>
                     <span className={"event-month"}>{eventCalendar.month}</span>
                     {
                         eventCalendar.events.map((event: Event, index: number) => (
