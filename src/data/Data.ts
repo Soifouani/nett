@@ -1,44 +1,78 @@
 import {Menu} from "../models/Menu.ts";
 import {EventCalendar} from "../models/EventCalendar.ts";
-import {ALL_PROJECTS, ASSOCIATION, DIY_WORKSHOPS, EVENTS, FREE_TRADE, NATURE_AND_GREENING } from "../utils/Constants.ts";
+import {ALL_PROJECTS, ASSOCIATION, DIY_WORKSHOPS, EVENTS, FREE_TRADE, NATURE_AND_GREENING} from "../utils/Constants.ts";
 import all_project from "../assets/icons/13px/Icon - All Projects_130px.svg";
 import diy_workshops from "../assets/icons/13px/Icon_DiY_130px.svg";
 import nature_and_greening from "../assets/icons/13px/Icon_Nature_Greening_130px.svg";
 import free_trade from "../assets/icons/13px/Icon_FreeTrade_130px.svg";
 import events from "../assets/icons/13px/Icon_Event_Blue_130px.svg";
 import association from "../assets/icons/13px/Icon_Association_130px.svg";
-import { environments } from "../utils/Environments.ts";
+import {environments} from "../utils/Environments.ts";
 
 
 export const menus: Menu[] = [
     {
         title: ALL_PROJECTS,
         icon: all_project,
+        descriptionTitle: "Adieu-siatz ! Bonjour à vous !",
+        descriptionText: `Bienvenue sur notre site! Les évènements et les ateliers que nous proposons sont ouverts à tout le
+                monde:
+                adhérents, non adhérents, participants occasionels, de passage, habitués, curieux, néophytes, ... Mais
+                attention,
+                certaines activités sont limitées en nombre de place! Alors contactez-nous pour vous inscrire ou
+                simplement pour
+                nous rencontrer`,
         link: '#'
     },
     {
         title: DIY_WORKSHOPS,
         icon: diy_workshops,
+        descriptionTitle: "Quam ob rem circumspecta cautela !",
+        descriptionText: `Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda 
+            Clematii cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans eius amore, 
+            non impetraret, ut ferebatur, per palatii pseudothyrum introducta, oblato pretioso reginae monili id adsecuta est, 
+            ut ad Honoratum tum comitem orientis formula missa letali omnino scelere nullo contactus idem Clematius nec 
+            hiscere nec loqui permissus occideretur.`,
         link: '#'
     },
     {
         title: NATURE_AND_GREENING,
         icon: nature_and_greening,
+        descriptionTitle: "Observatum est deinceps et cum edita !",
+        descriptionText: `Tempore quo primis auspiciis in mundanum fulgorem surgeret victura dum erunt homines Roma, 
+            ut augeretur sublimibus incrementis, foedere pacis aeternae Virtus convenit atque Fortuna plerumque dissidentes, 
+            quarum si altera defuisset, ad perfectam non venerat summitatem.`,
         link: '#'
     },
     {
         title: FREE_TRADE,
         icon: free_trade,
+        descriptionTitle: "Montium petere coeperint grassatores !",
+        descriptionText: `Dum haec in oriente aguntur, Arelate hiemem agens Constantius post theatralis ludos atque circenses 
+            ambitioso editos apparatu diem sextum idus Octobres, qui imperii eius annum tricensimum terminabat, 
+            insolentiae pondera gravius librans, siquid dubium deferebatur aut falsum, pro liquido accipiens et conperto, 
+            inter alia excarnificatum Gerontium Magnentianae comitem partis exulari maerore multavit.`,
         link: '#'
     },
     {
         title: EVENTS,
         icon: events,
+        descriptionTitle: "loci iniquitati milites cedunt !",
+        descriptionText: `Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, 
+            exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque Pontum armatum affervescentem 
+            in Asiam atque erumpentem, ore repulsum et cervicibus interclusum suis sustinerent, tum, inquam, 
+            Byzantii et postea signa illa et reliqua urbis ornanemta sanctissime custodita tenuerunt.`,
         link: environments.app.routes.home
     },
     {
         title: ASSOCIATION,
         icon: association,
+        descriptionTitle: "ubi autem in planitie potuerint !",
+        descriptionText: `Vbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem 
+            convellere nisu valido cogitabat, eique deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, 
+            quibusve commentis id fieret, antequam effundendis rebus pertinacius incumberet confidentia, 
+            acciri mollioribus scriptis per simulationem tractatus publici nimis urgentis eundem placuerat Gallum, 
+            ut auxilio destitutus sine ullo interiret obstaculo.`,
         link: '#'
     },
 ];

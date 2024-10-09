@@ -1,4 +1,4 @@
-import {FC, ReactElement} from "react";
+import {FC, ReactElement, useMemo} from "react";
 import EventItem from "./EventItem.tsx";
 import {eventCalendar} from "../../data/Data.ts";
 import {Event} from "../../models/Event.ts";
@@ -13,18 +13,22 @@ interface EventListProps {
 
 const EventList: FC<EventListProps> = ({ selectedMenu }): ReactElement => {
 
-    const filteredEvents = eventCalendar.map((eventCalendar: EventCalendar) => ({
-        ...eventCalendar,
-        events: eventCalendar.events.filter(event =>
-            selectedMenu === ALL_PROJECTS ? true : event.category === selectedMenu
-        ),
-    })).filter(eventCalendar => eventCalendar.events.length > 0);
+    const filteredEvents = useMemo(() => {
+        return eventCalendar
+            .map((calendar: EventCalendar) => ({
+                ...calendar,
+                events: calendar.events.filter((event: Event) =>
+                    selectedMenu === ALL_PROJECTS ? true : event.category === selectedMenu
+                ),
+            }))
+            .filter(calendar => calendar.events.length > 0);
+    }, [selectedMenu]);
 
 
     return (
-        <section className={"event"}>
+        <section className="event">
             {filteredEvents.map((eventCalendar: EventCalendar, i: number) => (
-                <div key={`event_calendar_${i}`} className={"event-calendar"}>
+                <div key={`event_calendar_${i}`} className="event-calendar">
                     <span className={"event-month"}>{eventCalendar.month}</span>
                     {
                         eventCalendar.events.map((event: Event, index: number) => (
