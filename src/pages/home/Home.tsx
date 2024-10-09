@@ -21,7 +21,6 @@ const Home: FC = (): ReactElement => {
                     <EventList selectedMenu={selectedMenu} />
                 </div>
             </div>
-
         </>
     );
 };

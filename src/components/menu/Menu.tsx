@@ -25,7 +25,7 @@ const Menu: FC<MenuProps> = ({ onMenuSelect }): ReactElement => {
                                 <span>
                                     <img src={menu.icon} alt={menu.title}/>
                                 </span>
-                                <span>{menu.title}</span>
+                                <span className={"menu-title"}>{menu.title}</span>
                             </Link>
                         </li>
                     );

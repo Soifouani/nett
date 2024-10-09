@@ -1,7 +1,18 @@
 .home-container {
     display: flex;
+    flex-direction: column;
 }
 
 .home-content {
-    margin: 0 150px 0 500px;
+    margin: 0 15px;
+}
+
+@media (min-width: 769px) {
+    .home-container {
+        flex-direction: row;
+    }
+
+    .home-content {
+        margin: 0 150px 0 500px;
+    }
 }

@@ -1,35 +1,113 @@
 .menu {
-    width: 350px;
-    height: 100vh;
-    overflow-y: auto;
-    position: fixed;
-    padding: 15px;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    display: flex;
+    white-space: nowrap;
+    padding: 10px;
+    position: relative;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li a {
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 16px;
+    font-size: 14px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    margin: 0 10px;
 }
 
 .menu-item img {
-    width: 50px;
-    height: 50px;
-}
-
-.no-selected {
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.36;
-    letter-spacing: -0.04em;
+    width: 63px;
+    height: 63px;
 }
 
 .selected {
-    color: #000000;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    display: block;
     font-size: 1.375rem;
     font-weight: 700;
-    line-height: 1.87;;
-    letter-spacing: -0.04em;
+    line-height: 1.87;
+}
+
+.selected img {
+    border: 4px solid #000000;
+    border-radius: 50px;
+}
+
+.no-selected .menu-title {
+    display: none;
+}
+
+
+@media (min-width: 769px) {
+    .menu {
+        width: 350px;
+        height: 100vh;
+        overflow-y: auto;
+        position: fixed;
+        padding: 15px;
+        white-space: normal;
+        display: block;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+    }
+
+    .menu-item {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .menu-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .no-selected {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.36;
+        letter-spacing: -0.04em;
+    }
+
+    .no-selected .menu-title {
+        display: block;
+    }
+
+    .selected {
+        display: block;
+        font-size: 1.375rem;
+        font-weight: 700;
+        line-height: 1.87;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .selected img {
+        border: 4px solid #000000;
+        border-radius: 50px;
+    }
 }
