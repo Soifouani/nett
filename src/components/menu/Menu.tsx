@@ -13,6 +13,7 @@ const Menu: FC<MenuProps> = ({ onMenuSelect }): ReactElement => {
     const handleClick = (index: number, selectedMenu: string) => {
         setOpenIndex(index);
         onMenuSelect(selectedMenu);
+        window.scrollTo(0, 0);
     }
 
     return (
