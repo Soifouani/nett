@@ -21,16 +21,3 @@
 .description p:last-child {
     margin-bottom: 0;
 }
-
-.cheerful-happy-icon {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    transform: translate(0, -30px);
-}
-
-.cheerful-happy-icon img {
-    Width: 55px;
-    Height: 55px;
-}
