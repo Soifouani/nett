@@ -16,7 +16,6 @@
     align-items: center;
     padding: 1.5rem 0.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    margin: 0 5rem;
     overflow: hidden;
 }
 
@@ -26,20 +25,6 @@
     border: none;
     scale: 1.01;
     background-color: #F6F6F6;
-}
-
-.event-category {
-    width: 5.625rem;
-}
-
-.event-category img {
-    width: 90px;
-    height: 90px;
-    opacity: 0.3;
-}
-
-.event aside:hover .event-category img {
-    opacity: 1;
 }
 
 .event-date {
