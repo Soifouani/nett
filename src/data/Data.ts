@@ -14,8 +14,7 @@ export const menus: Menu[] = [
     {
         title: ALL_PROJECTS,
         icon: all_project,
-        descriptionTitle: "Adieu-siatz ! Bonjour à vous !",
-        descriptionText: `Bienvenue sur notre site! Les évènements et les ateliers que nous proposons sont ouverts à tout le
+        description: `Bienvenue sur notre site! Les évènements et les ateliers que nous proposons sont ouverts à tout le
                 monde:
                 adhérents, non adhérents, participants occasionels, de passage, habitués, curieux, néophytes, ... Mais
                 attention,
@@ -27,8 +26,7 @@ export const menus: Menu[] = [
     {
         title: DIY_WORKSHOPS,
         icon: diy_workshops,
-        descriptionTitle: "Quam ob rem circumspecta cautela !",
-        descriptionText: `Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda 
+        description: `Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda 
             Clematii cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans eius amore, 
             non impetraret, ut ferebatur, per palatii pseudothyrum introducta, oblato pretioso reginae monili id adsecuta est, 
             ut ad Honoratum tum comitem orientis formula missa letali omnino scelere nullo contactus idem Clematius nec 
@@ -38,8 +36,7 @@ export const menus: Menu[] = [
     {
         title: NATURE_AND_GREENING,
         icon: nature_and_greening,
-        descriptionTitle: "Observatum est deinceps et cum edita !",
-        descriptionText: `Tempore quo primis auspiciis in mundanum fulgorem surgeret victura dum erunt homines Roma, 
+        description: `Tempore quo primis auspiciis in mundanum fulgorem surgeret victura dum erunt homines Roma, 
             ut augeretur sublimibus incrementis, foedere pacis aeternae Virtus convenit atque Fortuna plerumque dissidentes, 
             quarum si altera defuisset, ad perfectam non venerat summitatem.`,
         link: '#'
@@ -47,8 +44,7 @@ export const menus: Menu[] = [
     {
         title: FREE_TRADE,
         icon: free_trade,
-        descriptionTitle: "Montium petere coeperint grassatores !",
-        descriptionText: `Dum haec in oriente aguntur, Arelate hiemem agens Constantius post theatralis ludos atque circenses 
+        description: `Dum haec in oriente aguntur, Arelate hiemem agens Constantius post theatralis ludos atque circenses 
             ambitioso editos apparatu diem sextum idus Octobres, qui imperii eius annum tricensimum terminabat, 
             insolentiae pondera gravius librans, siquid dubium deferebatur aut falsum, pro liquido accipiens et conperto, 
             inter alia excarnificatum Gerontium Magnentianae comitem partis exulari maerore multavit.`,
@@ -57,8 +53,7 @@ export const menus: Menu[] = [
     {
         title: EVENTS,
         icon: events,
-        descriptionTitle: "loci iniquitati milites cedunt !",
-        descriptionText: `Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, 
+        description: `Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, 
             exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque Pontum armatum affervescentem 
             in Asiam atque erumpentem, ore repulsum et cervicibus interclusum suis sustinerent, tum, inquam, 
             Byzantii et postea signa illa et reliqua urbis ornanemta sanctissime custodita tenuerunt.`,
@@ -67,8 +62,7 @@ export const menus: Menu[] = [
     {
         title: ASSOCIATION,
         icon: association,
-        descriptionTitle: "ubi autem in planitie potuerint !",
-        descriptionText: `Vbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem 
+        description: `Vbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem 
             convellere nisu valido cogitabat, eique deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, 
             quibusve commentis id fieret, antequam effundendis rebus pertinacius incumberet confidentia, 
             acciri mollioribus scriptis per simulationem tractatus publici nimis urgentis eundem placuerat Gallum, 
