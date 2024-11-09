@@ -5,24 +5,24 @@ import {Event} from "../../models/Event.ts";
 import {EventCalendar} from "../../models/EventCalendar.ts";
 
 import "./event.css";
-import { ALL_PROJECTS } from "../../utils/Constants.ts";
+import {ALL_PROJECTS} from "../../utils/Constants.ts";
 
 interface EventListProps {
-    selectedMenu: string;
+    selectedMenuTitle: string;
 }
 
-const EventList: FC<EventListProps> = ({ selectedMenu }): ReactElement => {
+const EventList: FC<EventListProps> = ({ selectedMenuTitle }): ReactElement => {
 
     const filteredEvents = useMemo(() => {
         return eventCalendar
             .map((calendar: EventCalendar) => ({
                 ...calendar,
                 events: calendar.events.filter((event: Event) =>
-                    selectedMenu === ALL_PROJECTS ? true : event.category === selectedMenu
+                    selectedMenuTitle === ALL_PROJECTS ? true : event.category === selectedMenuTitle
                 ),
             }))
             .filter(calendar => calendar.events.length > 0);
-    }, [selectedMenu]);
+    }, [selectedMenuTitle]);
 
 
     return (
@@ -33,7 +33,7 @@ const EventList: FC<EventListProps> = ({ selectedMenu }): ReactElement => {
                     {
                         eventCalendar.events.map((event: Event, index: number) => (
                             <section key={`event_item_${index}`} className="event-container">
-                                <EventItem event={event}/>
+                                <EventItem event={event} selectedMenuTitle={selectedMenuTitle}/>
                             </section>
                         ))
                     }

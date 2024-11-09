@@ -1,7 +1,6 @@
 export interface Menu {
     title: string;
     icon: string;
-    descriptionTitle: string;
-    descriptionText: string;
+    description: string;
     link: string;
 }
