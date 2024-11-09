@@ -1,6 +1,6 @@
 import {FC, ReactElement} from "react";
 import {Event} from "../../models/Event";
-import {getEventIcon} from "../../utils/CommonFonctions.ts";
+import {getEventIcon} from "../../utils/CommonFonctions";
 
 import arrowLeft from "../../assets/icons/arrow-left.png"
 

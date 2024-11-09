@@ -2,25 +2,12 @@
     margin-bottom: 84px;
 }
 
-.description .title-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    margin: 32px 0;
-}
-
-.description h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin: 10px 0;
+.description span {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
     line-height: 1.36;
     letter-spacing: -0.04em;
-}
-
-.description img {
-    width: 100px;
-    height: 100px;
 }
 
 .description p {
@@ -28,8 +15,14 @@
     font-weight: 300;
     line-height: 1.36;
     letter-spacing: -0.04em;
+    margin: 0 17rem 1rem 0;
 }
 
-.description p:last-child {
-    margin-bottom: 0;
+.description ul {
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+}
+
+.description ul li {
+    list-style-type: disc;
 }
