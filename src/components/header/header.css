@@ -24,6 +24,7 @@ header {
     align-items: center;
     font-size: 14px;
     gap: 50px;
+    margin-right: 32px;
 }
 
 .join-us, .join-us_link {
@@ -70,7 +71,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 1rem;
     opacity: 0;
     transition: opacity 0.3s;
     margin-bottom: 5px;
@@ -83,5 +84,5 @@ header {
 }
 
 .wrapper-info .about-us {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
