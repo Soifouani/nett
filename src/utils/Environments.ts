@@ -3,6 +3,10 @@ export const environments = {
         routes: {
             home: '/',
             eventDetail: '/event/',
+        },
+        url: {
+            helloAsso: 'https://www.helloasso.com/',
+            facebook: 'https://www.facebook.com/?locale=fr_FR'
         }
     },
     api: {
