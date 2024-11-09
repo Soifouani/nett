@@ -1,13 +1,23 @@
 import {FC, ReactElement} from "react";
 import {Event} from "../../models/Event";
+import {getEventIcon} from "../../utils/CommonFonctions.ts";
 
 import arrowLeft from "../../assets/icons/arrow-left.png"
 
 import "./event.css";
+import { ALL_PROJECTS } from "../../utils/Constants.ts";
 
-const EventItem: FC<{ event: Event }> = ({event}): ReactElement => {
+const EventItem: FC<{ event: Event; selectedMenuTitle: string }> = ({event, selectedMenuTitle}): ReactElement => {
+
     return (
         <aside>
+            {
+                selectedMenuTitle === ALL_PROJECTS && (
+                    <div className={"event-category"}>
+                        <img src={getEventIcon(event.category) ?? ""} alt={event.category}/>
+                    </div>
+                )
+            }
             <div className="event-date">
                 <span>{event.day}</span>
                 <span>{event.dayNumber}</span>
@@ -24,7 +34,7 @@ const EventItem: FC<{ event: Event }> = ({event}): ReactElement => {
                 )
             }
             <div className="event-button">
-                <button><img src={arrowLeft} alt={""} /> </button>
+                <button><img src={arrowLeft} alt={""}/></button>
             </div>
         </aside>
     );

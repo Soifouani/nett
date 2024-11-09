@@ -33,7 +33,7 @@ const EventList: FC<EventListProps> = ({ selectedMenuTitle }): ReactElement => {
                     {
                         eventCalendar.events.map((event: Event, index: number) => (
                             <section key={`event_item_${index}`} className="event-container">
-                                <EventItem event={event}/>
+                                <EventItem event={event} selectedMenuTitle={selectedMenuTitle}/>
                             </section>
                         ))
                     }

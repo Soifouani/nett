@@ -25,6 +25,19 @@
     scale: 1.01;
     background-color: #F6F6F6;
 }
+.event-category {
+    width: 5.625rem;
+}
+
+.event-category img {
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
+}
+
+.event aside:hover .event-category img {
+    opacity: 1;
+}
 
 .event-date {
     display: flex;
