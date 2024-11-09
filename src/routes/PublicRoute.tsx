@@ -1,6 +1,7 @@
 import {FC, ReactElement} from "react";
 import {Outlet} from "react-router-dom";
-import Header from "../components/header/Header.tsx";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 import "./publicRoute.css";
 
@@ -11,6 +12,7 @@ const PublicRoute: FC = (): ReactElement => {
             <main>
                 <Outlet />
             </main>
+            <Footer />
         </>
     )
 }
