@@ -20,7 +20,7 @@ const Menu: FC<MenuProps> = ({ onMenuSelect }): ReactElement => {
     )
 
     return (
-        <nav className={"menu"}>
+        <nav className={"menu"} role="navigation" aria-label="Main">
             <ul>
                 {menus.map((menu, index) => {
                     return (
