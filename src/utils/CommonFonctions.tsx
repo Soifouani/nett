@@ -40,22 +40,24 @@ export const getDescriptoion = (event: string): ReactElement => {
         case NATURE_AND_GREENING:
             return (
                 <>
-                    <p>Organiser des bains de forêt et des balades pour découvrir la botanique. Se donner rendez-vous
+                    <p>
+                        Organiser des bains de forêt et des balades pour découvrir la botanique. Se donner rendez-vous
                         pour prendre soin de la nature :
-                        <ul>
-                            <li>Redonner un peu de place à la nature dans nos milieux urbains.</li>
-                            <li>Contribuer localement à la réduction des émissions de carbone responsables du
-                                réchauffement climatique.
-                            </li>
-                            <li>Créer de nouveaux espaces de biodiversité et de fraîcheur.</li>
-                            <li>Embellir l’environnement pour le bien-être des citoyens.</li>
-                        </ul>
                     </p>
-
-                    <p>Tels sont quelques uns des bienfaits de la végétalisation que nous soutenons au sein de notre
+                    <ul>
+                        <li>Redonner un peu de place à la nature dans nos milieux urbains.</li>
+                        <li>Contribuer localement à la réduction des émissions de carbone responsables du
+                            réchauffement climatique.
+                        </li>
+                        <li>Créer de nouveaux espaces de biodiversité et de fraîcheur.</li>
+                        <li>Embellir l’environnement pour le bien-être des citoyens.</li>
+                    </ul>
+                    <p>
+                        Tels sont quelques uns des bienfaits de la végétalisation que nous soutenons au sein de notre
                         association à travers des actions menées en partenariat avec les communes et les habitants :
                         plantation citoyennes, échange de graines, sorties botaniques, partage de connaissances et
-                        pratiques autour du végétal (compostage, permaculture…).</p>
+                        pratiques autour du végétal (compostage, permaculture…).
+                    </p>
 
                 </>
             );
