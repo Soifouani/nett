@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Légèrement plus opaque */
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,9 +13,9 @@
 
 .modal-container {
     background-color: #fff;
-    padding: 20px;
-    max-width: 600px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    width: 90%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -28,41 +28,42 @@
 .modal-close {
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333;
     cursor: pointer;
 }
 
 .modal-content {
-    padding: 20px;
+    padding: 16px;
 }
 
 .modal-content span {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #000000;
 }
 
 .modal-content p {
     color: #000000;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     line-height: 1.5;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .modal-footer {
     display: flex;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .modal-footer button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
 
@@ -82,4 +83,32 @@
 
 .modal-footer button:last-child:hover {
     background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .modal-container {
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .modal-close {
+        font-size: 1.5rem;
+    }
+
+    .modal-content span {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
+    }
+
+    .modal-footer {
+        gap: 16px;
+    }
+
+    .modal-footer button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }
