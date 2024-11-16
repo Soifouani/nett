@@ -5,8 +5,8 @@ export const environments = {
             eventDetail: '/event/',
         },
         url: {
-            helloAsso: 'https://www.helloasso.com/',
-            facebook: 'https://www.facebook.com/?locale=fr_FR'
+            helloAsso: 'https://www.helloasso.com/associations/nord-est-toulousain-en-transition',
+            facebook: 'https://www.facebook.com/Nordesttoulousainentransition/'
         }
     },
     api: {
