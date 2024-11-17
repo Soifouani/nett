@@ -12,7 +12,7 @@ const Footer = () => {
             <Link to={"#"}>Nos partenaires</Link>
             <Link to={"#"}>Mentions légales</Link>
             <Link to={"#"}>Empreinte CO2</Link>
-            <p>&copy; {currentYear} <span id="copyright-year"></span> NETT. Tous droits réservés.</p>
+            <p>&copy; {currentYear} <span id="copyright-year"></span> Nord-Est Toulousain en Transition · Tous droits réservés.</p>
         </footer>
     );
 };

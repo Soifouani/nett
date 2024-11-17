@@ -4,7 +4,13 @@
 }
 
 .home-content {
-    margin: 0 15px;
+    padding: 16px;
+}
+
+.home-menu {
+    position: sticky;
+    top: 130px;
+    background-color: #fff;
 }
 
 @media (min-width: 769px) {
@@ -13,7 +19,19 @@
     }
 
     .home-content {
-        margin: 0 150px 0 500px;
+        padding: 30px 80px;
         width: 100%;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home-menu {
+        width: 37%;
+    }
+}
+@media (min-width: 1024px) {
+    .home-menu {
+        width: 30%;
     }
 }

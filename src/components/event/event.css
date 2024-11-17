@@ -28,9 +28,6 @@
 
 .event-category {
     width: 4rem;
-}
-
-.event-category {
     display: none;
 }
 
@@ -79,6 +76,7 @@
     align-items: center;
     justify-content: flex-end;
     margin-right: 2rem;
+    z-index: -2;
 }
 
 .event-canceled span {
@@ -127,6 +125,7 @@
 
     .event-category {
         width: 5.625rem;
+        display: block;
     }
 
     .event-category img {
