@@ -2,32 +2,65 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     padding: 0 16px;
     z-index: 99;
+    height: 130px;
 }
 
-.about-us a {
-    text-decoration: underline;
-}
-
-.wrapper-info {
+.header__hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.header__hamburger-bar {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.header__hamburger-button.open .header__hamburger-bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.header__hamburger-button.open .header__hamburger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.header__hamburger-button.open .header__hamburger-bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.header__menu-content {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     font-size: 14px;
-    gap: 50px;
-    margin-right: 32px;
+    gap: 20px;
+    margin-right: 16px;
 }
 
-.join-us, .join-us_link {
+.header__menu-content .about-us {
+    font-size: 1rem;
+}
+
+.header__menu-content .about-us a {
+    text-decoration: underline;
+}
+
+.join-us, .join-us__link {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -35,11 +68,11 @@ header {
     gap: 5px;
 }
 
-.join-us .join-us_text {
-    font-size: 26px;
+.join-us .join-us__text {
+    font-size: 20px;
 }
 
-.join-us_img-wrapper {
+.join-us__img-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,13 +83,18 @@ header {
     cursor: pointer;
 }
 
-.join-us .join-us_img {
-    width: 100px;
-    height: 30px;
+.join-us .join-us__img-desktop {
+    display: block;
 }
 
 .join-us {
     position: relative;
+}
+
+.join-us .join-us__img-desktop {
+    display: block;
+    width: 100px;
+    height: 30px;
 }
 
 .tooltip {
@@ -71,18 +109,72 @@ header {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 0.875rem;
     opacity: 0;
     transition: opacity 0.3s;
     margin-bottom: 5px;
     z-index: 10;
 }
 
-.join-us_link:hover .tooltip {
+.join-us__link:hover .tooltip {
     visibility: visible;
     opacity: 1;
 }
 
-.wrapper-info .about-us {
-    font-size: 1rem;
+.header__menu {
+    position: absolute;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header__menu-open {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    background-color: #ffffff;
+    transform: translateX(0);
+    transition: transform 0.3s;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 32px;
+    }
+
+    .header__hamburger-button {
+        display: none;
+    }
+
+    .header__menu {
+        position: relative;
+        top: 0;
+        right: 0;
+        border: none;
+        transform: none;
+        transition: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__menu-content {
+        flex-direction: row;
+        font-size: 16px;
+        gap: 50px;
+        margin-right: 32px;
+    }
+
+    .join-us .join-us__text {
+        font-size: 26px;
+    }
+
+    .tooltip {
+        font-size: 1rem;
+    }
 }

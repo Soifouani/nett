@@ -1,8 +1,37 @@
 .home-container {
     display: flex;
+    flex-direction: column;
 }
 
 .home-content {
-    margin: 0 150px 0 500px;
-    width: 100%;
+    padding: 16px;
+}
+
+.home-menu {
+    position: sticky;
+    top: 130px;
+    background-color: #fff;
+}
+
+@media (min-width: 769px) {
+    .home-container {
+        flex-direction: row;
+    }
+
+    .home-content {
+        padding: 30px 80px;
+        width: 100%;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home-menu {
+        width: 37%;
+    }
+}
+@media (min-width: 1024px) {
+    .home-menu {
+        width: 30%;
+    }
 }
