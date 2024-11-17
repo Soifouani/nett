@@ -64,7 +64,13 @@ export const getDescriptoion = (event: string): ReactElement => {
         case FREE_TRADE:
             return (
                 <>
-
+                    <p> Vous avez des objets dont vous ne vous servez plus et qui fonctionnent ? </p>
+                    <p> Vous cherchez un objet particulier sans avoir l’envie de l’acheter ? </p>
+                    <p>
+                        Une zone de gratuité c’est un espace où chacun peut déposer ce dont il n’a plus besoin (à condition
+                        que l’objet soit propre et réutilisable), et où chacun peut prendre ce qu’il veut, même s’il n’a rien déposé.
+                    </p>
+                    <p> L’usage devient alors plus important que la notion de propriété. </p>
                 </>
             );
         case ALL_PROJECTS:
@@ -83,13 +89,32 @@ export const getDescriptoion = (event: string): ReactElement => {
         case EVENTS:
             return (
                 <>
-
+                    <p>
+                        Nous organisons en collaboration avec d'autres associations et partenaires (Mairie, collectifs, ...)
+                        des évènements occasionnels et parfois de participer à des animations régionales et nationales
+                        (Fresques, Salons, ...).
+                    </p>
+                    <p>
+                        Ces rencontres sont pour nous essentielles, car elles nous permettent
+                        d'apprendre de nouveaux savoir-faire, de faire résonner nos motivations dans de nouveaux défis,
+                        nous apportent d'autres perspectives.
+                    </p>
+                    <p> Pour chacun de ces évènements, pensez à nous envoyer un email pour vous inscrire, parfois les places sont limitées !</p>
+                    <p> Pour chacun de ces évènements, pensez à nous envoyer un email pour vous inscrire, parfois les places sont limitées ! </p>
                 </>
             );
         case ASSOCIATION:
             return (
                 <>
-
+                    <p>
+                        Cette section est le côté administratif de notre association... des réunions, certes ..., mais qui
+                        sont aussi des moments pour se retrouver joyeusement et pouvoir participer à chacune des décisions ! :)
+                    </p>
+                    <p>
+                        D'ailleurs, pour en savoir plus sur notre association et notre conseil collégial, nous vous avons
+                        créé une belle page, que pour vous. Et les autres aussi, car on est un groupe toujours en appétit
+                        de rencontrer de nouvelles personnes.
+                    </p>
                 </>
             );
         default:
