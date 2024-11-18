@@ -111,6 +111,7 @@
     width: auto;
     height: auto;
     max-inline-size: fit-content;
+    opacity: .3
 }
 
 @media (min-width: 768px) {
