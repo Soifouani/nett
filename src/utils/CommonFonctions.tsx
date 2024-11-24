@@ -100,7 +100,6 @@ export const getDescriptoion = (event: string): ReactElement => {
                         nous apportent d'autres perspectives.
                     </p>
                     <p> Pour chacun de ces évènements, pensez à nous envoyer un email pour vous inscrire, parfois les places sont limitées !</p>
-                    <p> Pour chacun de ces évènements, pensez à nous envoyer un email pour vous inscrire, parfois les places sont limitées ! </p>
                 </>
             );
         case ASSOCIATION:
